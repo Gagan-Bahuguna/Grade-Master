@@ -22,7 +22,7 @@
 ![Screenshot (69)](https://github.com/Gagan-Bahuguna/Grade-Master/assets/161736137/1a04d17f-59aa-43b4-bab2-3e327c8628d2)
 
 
-# Final Output(Percentage,Division)
+# Final Output (Percentage,Division)
 
 ![Screenshot (70)](https://github.com/Gagan-Bahuguna/Grade-Master/assets/161736137/2c0a2fde-dde5-4cfe-a7ac-c7e8aa955c26)
 
