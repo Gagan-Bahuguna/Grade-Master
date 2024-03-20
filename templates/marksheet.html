@@ -1,0 +1,104 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: orange;
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: pink;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Marksheet</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <li><a href="/about-us">About Us</a></li>
+        <a href="#">Contact</a>
+    </nav>
+    <section>
+        <h2>About Us</h2>
+        <p>This is a Marksheet created with Django.</p>
+        <div class="row">
+            <div class="col-12">
+                <form method="post">
+                    {% csrf_token %}
+                    <label>Subject 1</label>
+                    <input type="text" name="subject1" value="{{ss}}" class="form-control"/>
+                    <label>Subject 2</label>
+                    <input type="text" name="subject2" class="form-control"/>
+                    <label>Subject 3</label>
+                    <input type="text" name="subject3" class="form-control"/>
+                    <label>Subject 4</label>
+                    <input type="text" name="subject4" class="form-control"/>
+                    <label>Subject 5</label>
+                    <input type="text" name="subject5" class="form-control"/>
+                    
+                    <button type="submit"> Marksheet</button>
+                    <label>Total</label>
+                    <input type="text" value="{{total}}" class="form-control"/>
+                    <hr>
+                    <label>Percentage</label>
+                    <input type="text" value="{{percentage}}" class="form-control"/>
+                    <hr>
+                    <label>Division</label>
+                    <input type="text" value="{{Division}}" class="form-control"/>
+
+                   
+                    
+                            
+                    
+                    
+
+                    
+
+                </form>
+            </div>    
+
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 My Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+
